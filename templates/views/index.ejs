@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParSim point</title>
+    <link rel="shortcut icon" href="images/girl3.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- nav bar section  -->
+    <header class="header">
+
+        <img src="images/logo1.jpg" class="logo">
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+
+                <li><a href="/" class="navbar-link">Home</a></li>
+                <li><a href="/collection" class="navbar-link">Shop </a></li>
+                <li><a href="#about" class="navbar-link">About</a></li>
+                <li><a href="#Contact" class="navbar-link">Contact-Us</a></li>
+                <li><button id="signup" type="button" onclick="window.location.href ='/login'"><a href="/login" class="navbar-link">LOGIN</a></button></li>
+                <li style="color: white; text-transform: uppercase;"><%= (typeof name != "undefined" ? name : "") %></li>
+            </ul>
+
+        </nav>
+
+        <div class="mobile-icon">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-circle-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+
+    </header> <!-- nav bar section finish -->
+
+    <!-- front page -->
+    <section class="home" id="home">
+        <div class="brand_name ">
+
+            <p id="fashion">
+            ParSim
+            </p>
+            <p id="point">Point</p>
+        </div>
+        <img src="images/girl3.jpg" alt="">
+
+    </section>
+
+    <!-- two dresees page -->
+    <section class="afterhome">
+
+        <div class="dresses">
+            <div id="dress1">
+                <img src="images/dress1.png" alt="dress1">
+                <p>25% off onStriped Chiffon Summer Dress</p>
+            </div>
+            <div id="dress2">
+                <img src="images/dress2.png" alt="dress1">
+                <p>Patchwork Denim Dress</p>
+                <button type="button" onclick="window.location.href ='/collection'"><a href="/collection">SHOP NOW</a></button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- about page -->
+    <section class="about" id="about">
+        <div class="aboutcontianer">
+            <div class="aboutimage">
+                <img src="images/blueDress.jpg" alt="">
+            </div>
+            <div class="aboutcontent">
+                <div class="whiteback"> white back</div>
+                <div class="aboutcontentimg">
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/women-fashion-free-img.jpg"
+                        alt="" srcset="">
+                </div>
+
+                <p id="newarrivals">New Arrivals</p>
+            </div>
+        </div>
+
+    </section>
+
+  <!-- after about page -->
+    <section class="after_about">
+        <div class="icon_container">
+            <div class="icon1 icons">
+                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/globe-free-img.png"
+                    alt="">
+                <p>Worldwide Shipping</p>
+            </div>
+            <div class="icon2 icons">
+                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/quality-free-img.png"
+                    alt="">
+                <p>Best Quality</p>
+
+            </div>
+            <div class="icon3 icons">
+                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/tag-free-img.png"
+                    alt="">
+                <p>Best Offers</p>
+
+            </div>
+            <div class="icon4 icons">
+                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/lock-free-img.png"
+                    alt="">
+                <p>Secure Payments</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us page  -->
+    <section class="Contact-Us" id="Contact">
+        <div class="contact-container">
+            <div class="categories_help">
+                <!-- first contianer -->
+                <div class="categories">
+                    <p>Categories</p>
+                    <ul class="list_item1">
+                        <li class="itmes">Dresses</li>
+                        <li class="itmes">Sandals</li>
+                        <li class="itmes">Shoes</li>
+                        <li class="itmes">Accessories</li>
+                    </ul>
+                </div>
+                <div class="helpconatiner">
+                    <p>Help</p>
+                    <ul class="list_item2">
+                        <li class="itmes">Track Order</li>
+                        <li class="itmes">Returns</li>
+                        <li class="itmes">Shipping</li>
+                        <li class="itmes">FAQs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="icons_mail">
+
+                <div class="get_in_touch">
+                    <p>Get In Touch</p>
+                    <div class="icon1 icondiv">
+                        <a href="https://www.facebook.com" target="_blank"> <i
+                                class="fa-brands fa-facebook fa-2x" style='color: white'></i> </i>
+                        </a>
+                    </div>
+                    <div class="icon2 icondiv">
+                        <a href="mailto: parulsaini2803@gmail.com" target="_blank"> <i class="fa-solid fa-at fa-2x"
+                                style='color: white'></i></i>
+                        </a>
+                    </div>
+                    <div class="icon3 icondiv">
+                        <a href="https://www.instagram.com" target="_blank"> <i
+                                class="fa-brands fa-instagram fa-2x" style='color: white'></i></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mail">
+                    <div class="mailsubmit">
+                        <input type="text" placeholder="example@gmail.com">
+                        <button type="button" style="cursor: pointer">Subscribe</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- js section   for navbar -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/nav.js"></script>
+
+
+</body>
+
+</html>

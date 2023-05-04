@@ -1,0 +1,194 @@
+
+@import url(./collection.css);
+
+
+/* @media (max-width: 700px)and (min-width:300px){
+	.navbar-link:visited{
+        font-size: 2rem;
+		border: solid 2spx rgb(213, 51, 51);
+    } 
+} */
+
+.full-page
+{
+    
+	width: 100%;
+	/* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://img.freepik.com/premium-photo/cosmetic-brushes-makeup-powder-dark-background_23-2148209050.jpg?w=2000"); */
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://c4.wallpaperflare.com/wallpaper/825/343/730/apple-dark-spark-ios9-wallpaper-preview.jpg");
+	
+	background-position: center;
+	background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	z-index: -1;
+}
+#login-form
+{
+    display:contents;
+}
+.form-box
+{
+    width:380px;
+	height:490px;
+	position:relative;
+	top: 2rem;
+	margin:10% auto;
+	background: rgb(81 63 80 / 57%);
+	padding:10px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+.button-box
+{
+	width:224px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 22px 8px #9f7d9f78;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	/* outline: none; */
+	position:relative;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: white;
+	font-weight: bold;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #c196c1;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #c0b396;
+	outline:none;
+	background: transparent;
+}
+::placeholder{
+	color: rgba(255, 255, 255, 0.5);
+}
+.submit-btn1
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 20% auto;
+	color: white;
+	background: #c196c1;
+	font-weight: bold;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	font-size: 20px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submit-btn2
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+    background: #c196c1;
+     border: 0;
+	outline: none;
+	border-radius: 30px;
+	font-size: 20px;
+    color: white;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.check-box
+{
+    
+	margin: 22px 10px 34px 0;
+}
+span
+{
+	color:rgb(161, 161, 161);
+	font-size:12px;
+	bottom:76px;
+	/* position:absolute; */
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:20;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 20;
+}
+
+
+@media(max-width: 878px) and (min-width:300px){
+	.form-box{
+		width: 20rem;
+		top:0rem;
+	}
+	.button-box {
+		width: 15rem;
+	}
+	#btn{
+		width: 130px;
+	}
+	.input-group-register {
+		top: 110px;
+	}
+	.active .navbar {
+		z-index: 1;
+	}
+	.mobile-icon {
+		z-index: 1;
+	}
+	.input-field {
+		width: 93%;}
+    .submit-btn1 {	
+		position: absolute;
+	}	
+    .submit-btn2 {	
+		position: absolute;
+	}	
+}
+

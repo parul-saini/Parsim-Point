@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<!---we had linked our css file--->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- css fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   
+    <!-- nav bar section  -->
+    <header class="header">
+        <img src="images/logo1.jpg" class="logo">
+    
+        <nav class="navbar">
+            <ul class="navbar-list">
+    
+                <li><a href="/" class="navbar-link">Home</a></li>
+                <li><a href="/collection" class="navbar-link">Shop</a></li>
+                <!-- <li><button id="signup"><a href="/login" class="navbar-link">SIGN-UP</a></button></li> -->
+                <div class="shoppingCart">
+                    <a href="/cart"> <i class="fa-solid fa-cart-shopping  fa-2x cartIcon"></i></a>
+                 </div>
+            </ul>
+    
+        </nav>
+        <div class="mobile-icon">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-circle-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+     
+    <!-- login page -->
+    
+    <div class="full-page">
+        
+        <div id='login-form'class='login-page'>
+           
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                   
+                </div>
+                
+                <form id='login'  class='input-group-login' action="/login" method="POST"  >
+                    <input type='text'class='input-field'placeholder='Email Id' name="email"required >
+		    <input type='password'class='input-field'placeholder='Enter Password' name="password" required>
+		   
+		    <button type='submit'class='submit-btn1' value="login">Log in</button>
+            <p id="for_show_error"style="color: white; "><%= (typeof msg != "undefined" ? msg : "") %></p>
+            <p id="for_show_error"style="color: white; "><%= (typeof invalid != "undefined" ? invalid : "") %></p>
+		 </form>
+
+
+		 <form id='register' class='input-group-register'   action="/register" method="POST" >
+		     <input type='text'class='input-field'placeholder='First Name'name="firstname"  required>
+		     <input type='text'class='input-field'placeholder='Last Name 'name="lastname"  required>
+		     <input type='email'class='input-field'placeholder='Email Id' name="email" required>
+		     <input type='password'class='input-field'placeholder='Enter Password' name="password" required>
+		     <input type='password'class='input-field'placeholder='Confirm Password' name="confirmpassword" required>
+		     <input type='checkbox'class='check-box' required><span>I agree to the term and conditions</span> 
+            <button type='submit'class='submit-btn2' value="login">Register</button>
+	         </form>
+            </div>
+    </div>
+  
+  
+     <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+			//add to chnge the url so i can add easily its data to mongodb 
+			window.history.replaceState(null, document.title, "/register")
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+			//add to chnge the url so i can add easily its data to mongodb 
+			window.history.replaceState(null, document.title, "/login")
+		}
+	</script> 
+  <!-- js section   for navbar -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/nav.js"></script>
+
+
+</body>
+
+</html>

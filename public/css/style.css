@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/* font-family: 'PT Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap'); 
+/* font-family: 'Niconne', cursive; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.header {
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9, 12, 15);
+    /* position: fixed;
+    top: 0px; */
+    /* opacity: 0.7; */
+}
+
+
+.header img {
+    height: inherit;
+    width: 8rem;
+    filter: invert(100%);
+
+}
+
+
+.navbar-list {
+    display: flex;
+    gap: 3.1rem;
+    list-style: none;
+    padding: 6px;
+    margin: 18px;
+
+}
+
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+    color: white;
+
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: rgb(10, 65, 67);
+   font-size: 22px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.navbar-list button {
+    background-color: rgb(10, 65, 67);
+    color: white;
+    outline: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    position: relative;
+    bottom: 5px;
+    border: 3px solid rgb(10, 65, 67);
+    border-radius: 10px;
+}
+.navbar-list button:hover {
+    box-shadow: 2px 2px white;
+   
+}
+#signup a{
+    font-size: 1rem;
+}
+#signup a:hover{
+    font-size: 1rem;
+    color: white;
+}
+
+.mobile-icon {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    color: white;
+    margin: 10px;
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.mobile-nav-icon[name="close-circle-outline"] {
+    display: none;
+}
+
+/*================= home section */
+.home {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/home.png") center center/cover;
+    
+    /* background: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/home-new-bg-free-img.jpg") center center/cover; */
+
+}
+
+.home img {
+    height: 180px;
+    width: 180px;
+
+}
+.brand_name{
+    /* border: solid white 3px; */
+    position: absolute;
+    font-size: 12rem;
+    display: flex;
+    text-align: center;
+   
+}
+
+.brand_name p{
+color: #ffefff;
+font-family: 'Niconne', cursive;
+position: relative;
+opacity: 0.8;
+}
+#fashion{
+    bottom: 9rem;
+    left:-3rem;
+}
+#point{
+    top:4rem
+}
+
+/*================== home section responsive */
+@media(max-width:449px) {
+    .home {
+        height: 588px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../images/home.png") center center/cover;
+
+    }
+    .home img {
+        height: 115px;
+        width: 115px;
+
+    }
+    .brand_name{
+        font-size: 4rem;
+    }
+    #point {
+        top: 4rem;
+        right: 1rem;
+    }
+    #fashion {
+        bottom: 5rem;
+        left: 1rem;
+    }
+}
+@media(min-width:449px)and (max-width:883px) {
+    .brand_name{
+        font-size: 5rem;
+    }
+    
+}
+
+
+/* ==========RESPONSIVE NAVBAR============== */
+
+@media(max-width:743px) {
+    .mobile-icon {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    nav {
+        /* display: none; */
+        width: 100vw;
+        height: auto;
+        background-color: rgb(9, 12, 15);
+      position: absolute;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+        transform: translateX(100%);
+        transition: all 0.1s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .navbar-link:hover {
+        color: rgb(12, 70, 72);
+      font-weight: bold;
+    }
+
+    .active .navbar {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        background: #0d0d11d4;
+    }
+
+    .active .mobile-nav-icon[name='menu-outline'] {
+        display: none;
+    }
+
+    .active .mobile-nav-icon[name='close-circle-outline'] {
+        display: block;
+    }
+  
+    /* this add for hide collection heading */
+    .hide p{   
+      opacity: 0.2;
+      display: none;
+      
+    }
+  
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+
+    overflow-x: hidden;
+}
+
+
+
+/*============= after home  */
+.afterhome {
+    height: 700px;
+    background-color: aliceblue
+}
+
+.dresses {
+    height: 650px;
+    /* border: 3px solid black; */
+    margin: 2px 40px;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(42, 137, 185);
+
+}
+
+#dress1 {
+    height: 500px;
+    position: relative;
+    left: 2rem;
+    top: 6rem;
+    margin: 10px;
+    text-align: center;
+}
+
+#dress1 img {
+    height: 450px;
+    width: 422px;
+    margin: 10px;
+    box-shadow: 7px 8px 11px rgb(42 137 185);
+}
+
+#dress2 {
+    height: 600px;
+    position: relative;
+    left: 12rem;
+    margin: 10px;
+    text-align: center;
+
+}
+
+#dress2 img {
+    height: 460px;
+    width: 422px;
+    margin: 10px;
+    box-shadow: 7px 8px 11px rgb(42 137 185);
+}
+
+#dress2 button {
+    margin: 20px;
+    padding: 10px;
+    width: 153px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(42 137 185);
+
+}
+
+#dress2 button a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*=============  responsive after home  */
+@media only screen and (min-width:1395px) and (max-width:1551px) {
+    .home{
+    height: 690px;
+    }
+    #dress1 {
+        left: 7rem;
+    }
+    #dress1  img{
+        width: 440px;
+    }
+   #dress2 {
+        left: 17rem;
+    }
+}
+
+@media only screen  and (min-width:738px)and (max-width:1160px)  {
+  
+    .afterhome {
+        height: 557px;
+    }
+    .dresses{
+        height: 506px;
+     /* border:  solid black 2px ; */
+    }
+    #dress1 {
+        /* border:  solid black 2px ; */
+       height: 384px;
+        left: 1rem;
+        top: 6rem;
+        margin-right: 7% ;
+     }
+    #dress1 img {
+        height: 290px;
+        width: 290px;
+    }
+    #dress2 {
+        /* border:  solid black 2px ; */
+        height: 400px;
+        left: 1rem;
+        margin: 0px;
+     }
+     #dress2 img {
+        width: 283px;
+        height: 312px;
+     }
+} 
+
+@media only screen  and (max-width:738px)
+{
+    .afterhome {
+        height: 900px;
+    }
+    .dresses{
+        height: 506px;
+        display: flex;
+        flex-direction: column;
+        top: 1rem;
+     /* border:  solid black 2px ; */
+    }
+    #dress1 {
+        /* border:  solid black 2px ; */
+       height: 381px;
+        left: 0rem;
+        top: 0rem;
+       
+     }
+    #dress1 img {
+        height: 290px;
+        width: 290px;
+    }
+    #dress2 {
+        /* border:  solid black 2px ; */
+        height: 440px;
+        left: 0rem;
+        margin: 0px;
+     }
+     #dress2 img {
+        width: 283px;
+        height: 312px;
+     }
+}
+
+/* for mobile  */
+@media only screen  and (max-width:369px)
+{
+    .afterhome {
+        height: 891px;
+    }
+    .dresses{
+        height: 835px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 1rem;
+     /* border:  solid black 2px ; */
+    }
+    #dress1 {
+        /* border:  solid black 2px ; */
+       height: 381px;
+       width: 100vw;
+        left: 0rem;
+        top: 0rem;
+       
+     }
+    #dress1 img {
+        height: 290px;
+        width: 95vw;
+        margin: 0px;
+    }
+    #dress2 {
+        /* border:  solid black 2px ; */
+        height: 471px;
+        left: 0rem;
+        margin: 0px;
+     }
+     #dress2 img {
+        width: 95vw;
+        height: 312px;
+     }
+}
+
+
+
+/* =================about  page section */
+.about {
+    height: 750px;
+    background-color: rgb(21, 41, 58);
+   /* justify-content: right; */
+
+}
+.about .aboutcontianer{
+    
+    position: relative;
+    top: 2rem;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+
+}
+.about .aboutimage{
+    /* border: solid rgb(227, 26, 187) 2px ; */
+   margin: 4px ;
+   height: 702px;
+
+}
+.about .aboutimage img {
+    width: 578px;
+    height: 688px;
+}
+
+.about .aboutcontent{
+ /* border: solid rgb(157, 177, 44) 3px ; */
+   margin: 10px ;
+   width: 550px ;
+   color: white;
+   font-size: 9rem;
+   text-align: center;
+}
+
+.aboutcontent .whiteback{
+    background-color: whitesmoke;
+    width: auto;
+    height: 595px;
+    border-right: 3px solid black;
+}
+.about .aboutcontent img{
+    right: 13px;
+    width: 500px;
+    height: 565px;
+    position: absolute;
+    top: 39px;
+}
+.about .aboutcontent #newarrivals{
+    position: absolute;
+    height: 442px;
+    width: inherit;
+    bottom: 196px;
+    color: #c7d9d9;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: black;
+    opacity: 0.6;
+
+}
+/* ========================responsive about page  */
+@media(max-width:1115px) and (min-width:825px)
+{
+    .about .aboutimage img {
+        width: 404px;
+    height: 660px
+    }
+    .about .aboutcontent{
+        width: 439px;
+    font-size: 7rem;
+    }
+    .about .aboutcontent img{
+    width: 409px;
+    }
+
+}
+@media(max-width:825px) and (min-width:700px){
+    .about .aboutimage img {
+        width: 339px;
+        height: 652px;}
+        .about .aboutcontent{
+            width: 378px;
+            font-size: 5rem;
+        }
+        .about .aboutcontent img {
+          width: 343px;
+         height: 532px;
+          top: 35px;
+        }
+        .about .aboutcontent #newarrivals{
+            display: flex;
+        }
+}
+@media(max-width:699px)and (min-width:391px) {
+    .about{
+        height: 1119px;
+    }
+    .about .aboutcontianer{
+        flex-direction: column;
+    }
+    .about .aboutimage {
+        margin: auto;
+        height: fit-content;
+    }
+    .about .aboutimage img {
+        width: 400px;
+        height: 450px;
+    }
+    .about .aboutcontent img{
+        width: 361px;
+        top: 30rem;
+    }
+    .about .aboutcontent{
+        width: 400px;
+        font-size: 4rem;
+    }
+    .about .aboutcontent #newarrivals{
+        display: flex;
+        bottom: 124px;
+        height: 319px;
+    }
+}
+
+@media(max-width:392px){
+    .about{
+        height: 1119px;
+    }
+    .about .aboutcontianer{
+        flex-direction: column;
+    }
+    .about .aboutimage {
+        margin: initial;
+        height: fit-content;
+    }
+    .about .aboutimage img {
+        width: 355px;
+        height: 450px;
+    }
+    .about .aboutcontent img{
+        width: 297px;
+        top: 30rem;
+        right: 39px;
+    }
+    .about .aboutcontent{
+        width: 306px;
+        font-size: 4rem;
+    }
+    .about .aboutcontent #newarrivals{
+        display: flex;
+        bottom: 124px;
+        height: 319px;
+    }
+}
+
+
+
+
+/* ====================after about */
+.after_about{
+    height: 351px;
+    background-color: lightsteelblue;
+}
+.icon_container{
+    /* border: solid red 2px ; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 80%;
+    height: 204px;
+    top: 60px;
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+.icons{
+   text-align: center;
+    filter: drop-shadow(2px 4px 6px black);
+    font-size: 22px;
+    font-weight: bold;
+     width: 167px;
+}
+@media(max-width:472px){
+    .after_about{
+        height: 43rem;
+    }
+    .icon_container{
+        flex-direction: column;
+        width: fit-content;
+        top: 15rem;
+    }
+}
+
+
+
+/*============================ contact pagee */
+.Contact-Us{
+    background: url("https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/banner-03.jpg")  center center/cover;
+    height: 600px;
+    width: 100%;
+}
+
+.contact-container{
+   position: relative;
+    top: 0rem;
+    height: inherit;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.categories_help{
+    
+  display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.categories,.helpconatiner{
+color: white;
+}
+.categories p{
+border-bottom: solid white 4px ;
+text-align: center;
+font-weight: bold;
+font-size: 2rem;
+margin: 2px 3px;
+padding: 7px;
+}
+.helpconatiner p{
+border-bottom: solid white 4px ;
+text-align: center;
+font-weight: bold;
+font-size: 2rem;
+margin: 2px 3px;
+padding: 9px;
+}
+
+.categories .list_item1 li{
+    list-style: none;
+    margin: 10px ;
+    font-weight: bold;
+}
+.helpconatiner .list_item2 li{
+    list-style: none;
+    margin: 10px ;
+    font-weight: bold;
+}
+.icons_mail{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.get_in_touch{
+    text-align: center;
+    width: 165px;
+}
+.get_in_touch  p{
+    color: white;
+}
+.get_in_touch .icondiv{
+ margin: 10px ;
+}
+.mail{
+height: 100px;
+}
+.mailsubmit{
+    display: flex;
+    flex-direction: column;
+}
+.mailsubmit input{
+ border:0px solid ;
+ color: white;
+background-color:transparent; 
+ border-bottom: white solid 3px ;
+ outline: none;
+ margin: 10px ;
+ padding: 10px;
+}
+.mailsubmit button{
+      background-color: cadetblue;
+        padding: 10px;
+        margin: 10px 10px;
+        border-radius: 23px;
+        font-weight: bold;
+}
+/*============================= responsive contact page */
+@media (max-width:350px)
+{
+    .categories p{
+        font-size: 1rem;
+    }
+    .helpconatiner p{
+        font-size: 1rem;
+
+    }
+    .mail {
+        width: 162px;
+    }
+}

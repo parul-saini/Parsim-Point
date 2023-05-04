@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/* font-family: 'PT Sans', sans-serif; */
+
+@import url(./style.css);
+
+
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    user-select: none;
+} 
+
+
+/* Adding cart */
+ .cartIcon{
+    color: white;
+    cursor: pointer;
+}
+.cart::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+}
+.amount {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin: 2px 16px;
+    font-size: 17px;
+}
+
+
+/* Collection */
+
+
+/* More Backgrounds
+https://i.pinimg.com/564x/ea/88/27/ea882715f6d79d1d2df6064c1225d06a.jpg
+ https://i.pinimg.com/736x/df/ba/79/dfba79af0f4fe07b8de09d2aaf551f5c.jpg
+https://i.pinimg.com/564x/6d/68/52/6d685245da5aa085790737c612ad5aaa.jpg
+
+*/
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 30px;
+}
+.collectionHeading {
+    color: white;
+     text-align: center;
+    position: relative;
+    top: -5px;
+    height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collectionHeading::before{
+    /* background: url(" https://i.pinimg.com/564x/6d/68/52/6d685245da5aa085790737c612ad5aaa.jpg    ") no-repeat center center/cover; */
+    /* background: url("https://www.stellarising.com/hs-fs/hubfs/Makeup_Color_Beauty_WMI.jpg?width=627&height=212&name=Makeup_Color_Beauty_WMI.jpg") no-repeat center center/cover; */
+    background: url("https://media.istockphoto.com/photos/makeup-brush-picture-id187109787?k=20&m=187109787&s=170667a&w=0&h=yutB9OtdfG4em5d7NCytKDNJA-fstawxIrozAo8kGhA=") no-repeat center center/cover;
+  
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    /* opacity: 0.9; */
+}
+.makeupBg{
+    margin: 20px;
+    max-width: 100%;
+}
+
+.collectionBg{
+    margin-top: 200px;
+    border: 2px solid ;
+    /* height: 300px; */
+    display: inline-block;
+    width:100%;
+}
+@media (max-width: 743px){
+    nav {
+      
+        width: 100vw;
+        height: auto;
+    } 
+     .hideheading { 
+      z-index: -1;
+    }
+}
+
+/* Content Container */
+
+.container{
+    margin: 75px auto;
+    width:75rem;
+    z-index: 1;
+}
+/* Images */
+img{
+    width: 250px;
+    height: 300px;
+}
+
+.image{
+    display: inline-block;
+    margin: 20px;
+ }
+ /* quick view */
+ .imgSec {
+    position: relative;
+} 
+  .text {
+    border-radius: 20px;
+    color : black;
+    background : white;
+    text-align: center;
+    width: 134px;
+    bottom: 0;
+    position: absolute;
+    margin:15px 56px ;
+    overflow: hidden;
+    font-size: 20px; 
+     height: 0%;
+    transition: all 0.4s ease;
+}
+.text:hover{
+    transition: all 0.6s ease-out;
+    color: white;
+    background-color: #000;
+}
+
+#addTo_cart{
+    background: black;
+    padding: 6px 10px;
+    width: -webkit-fill-available;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 21px;
+    color: aliceblue;
+    cursor: pointer;
+}
+#addTo_cart:hover{
+    border: 2px solid white;
+}
+
+span{
+    font-family: cursive;
+}
+
+.imgSec:hover .text{
+    height: 35px;
+    line-height: 35px;
+}
+
+/* finish */
+/* Description */
+.desc{
+    padding: 10px;
+}
+p.name {
+    font-weight: 900;
+}
+/* Desc finish */
+
+
+   
+/* Catergoies Start */
+.categories{
+    list-style-type: none;
+    margin: 40px auto;
+    margin-bottom: 25px;
+    width: 74rem;
+    text-decoration: none;
+}
+.category{
+       padding: 20px;
+    font-size: 18px;
+    display: inline;
+    text-decoration: none;
+
+}
+.category a {
+    text-decoration: none;
+    color: rgb(32, 27, 27);
+    padding: 10px;
+}
+.active {
+    border-bottom: 3px solid #000; 
+}
+/* .activeCategory {
+    border-bottom: 3px solid #000;
+} */
+/* Categories finish  */
+
+
+/* Responsive Collection and items */
+@media screen and (max-width:1200px){
+    .container{
+        width:65rem;
+    }
+    .photo {
+        width: 233px;
+        height: 233px;
+    }
+    .image{
+        margin: 10px;
+    }
+    .categories{
+        width:64rem;
+    }
+   .desc button:hover{
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:1025px){
+    .container{
+        width:48rem;
+    }.categories{
+        width:49rem;
+    } .collectionHeading h1{
+        font-size: 4.5rem;
+    }
+    .collectionHeading{
+        height: 420px;
+    }
+   .desc button:hover{
+        border: 2px solid white;
+    }
+}
+@media only screen and (max-width:777px){
+    .container{
+        width: 32rem;
+    position: relative;
+    top: 2rem;
+    z-index:-1;
+    }
+   .category{
+    display: contents;
+   }
+    .categories{
+        width: 32rem;
+        position: relative;
+        top: 2rem;
+        margin:auto;
+    }
+    .collectionHeading{
+        height: 350px;
+    }
+    .collectionHeading h1{
+        font-size: 4rem;
+    }
+    .collectionHeading::before{
+        height:62%;
+    }
+    .text{
+        margin: 15px 51px;
+        height: 0%;
+    }
+    .text:hover{
+        height: 13%;
+        transition: all 0.6s ease-out;
+        color: white;
+        background-color: #000;
+    }
+   .desc button:hover{
+        border: 2px solid white;
+    }
+    
+}
+@media screen and (max-width:742px){
+    .collectionHeading{
+        height: 250px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+    .collectionHeading::before{
+        height: 39%;
+    }
+    .collectionHeading h1{
+        font-size: 3rem;
+        letter-spacing: 23px;
+    }
+    .hideheading h1{
+        display: none;
+    }
+   .desc button:hover{
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width: 518px){
+.container {
+    width: 29rem;
+}
+.photo {
+    width: 200px;
+    height: 250px;
+}
+.text{
+    font-size: 18px;
+    margin: 15px 31px;
+}
+.category{
+    padding: 13px;
+    font-size: 16px;}
+.categories {
+    width: 28rem;
+}
+.collectionHeading h1 {
+    font-size: 2rem;
+    letter-spacing: 20px;
+}
+.hideheading h1{
+    display: none;
+}
+#addTo_cart:hover{
+    border: 2px solid white;
+}
+}
+@media screen and (max-width:443px)
+{
+    .container{
+
+        width: 277px;
+    }
+    .photo{
+        width: 250px;
+        height: 300px;  
+    }
+    .category {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .categories{
+        width: 20rem;
+    position: relative;
+    top: 20px;
+    }
+    .collectionHeading h1{
+        letter-spacing: 10px;
+    }
+    .text {
+        margin: 15px 59px;
+        font-size: 18px;
+    }
+    .hideheading h1{
+        display: none;
+    }
+
+   
+}
+@media screen and (max-width:290px){
+    .container{
+        width:250px;
+    }
+    .image{
+        margin: 0px;
+    }
+    .photo{
+        width:100%;
+        height: 100%;
+
+    }
+    .category {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .collectionHeading::before {
+        height: 35%;
+    }
+    .collectionHeading {
+        height: 177px;
+    }
+    .collectionHeading h1 {
+        letter-spacing: 6px;
+        font-size: 1.8rem;
+    }
+    .hideheading h1{
+        display: none;
+    }
+}
+
+

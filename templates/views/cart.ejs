@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Parsim point</title>
+    
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+
+        <!-- when cart empty -->
+        <div class="cartempty">
+            <!--we fetch the data from the collection js file  when the cart is empty-->
+        </div>
+
+        <!-- when cart have some items -->
+        <section class="orders">
+           
+                <!-- 
+                <div class="cartfull">
+                    <div class="cartSummary">
+                        <img src="images/cartlady.png" alt="cart summary">
+                        <p>Cart summary</p>
+                    </div>
+                </div> -->
+                <div class="dressList">
+                    <!--we fetch the data from the collection js file  -->
+                </div>
+                
+        </section>
+
+        
+         <!-- js section   for navbar -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/nav.js"></script>
+   
+    <script src="js/collection.js"></script>
+</body>
+
+</html>

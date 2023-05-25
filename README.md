@@ -1,5 +1,5 @@
 # Parsim-Point
-E-commerce website
+E-commerce website <br>
 “ParSim POINT” is a static shopping website.It is an online platform that provides a collection of products or services that customers can browse and
 purchase. Unlike dynamic websites, static shopping websites do not have dynamic content that changes based on user input. Instead, they present a
 fixed set of pages with pre-defined content and layout. This is web-based project which is made for remote-shopping orshopping through Internet. As the technology is being advanced the way of life is changing accordance.Now a day’s we can place the order for any thing from our home. There is no need to go the shop ofthe thingswe want. The order can be placed online through Internet. People had to suffer the rush of the market when they went for

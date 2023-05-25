@@ -1,3 +1,6 @@
+<img width="960" alt="cart" src="https://github.com/parul-saini/Parsim-Point/assets/97037135/cfcf2761-af50-4018-96ea-c5a0a321b568">
+<img width="960" alt="cart2" src="https://github.com/parul-saini/Parsim-Point/assets/97037135/b05fd7e4-c0c4-4a0f-9789-fc0243bfe167">
+<img width="960" alt="home" src="https://github.com/parul-saini/Parsim-Point/assets/97037135/e83ecfb7-419e-4f28-98ff-c98b7fd48d3d">
 # Parsim-Point
 E-commerce website
 
